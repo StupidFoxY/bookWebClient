@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { FileUploadModule } from 'ng2-file-upload';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 //导入路由
 import { AppRoutingModule } from './app-routing.module';
@@ -175,10 +175,10 @@ import { ShortdetailComponent } from './shortdetail/shortdetail.component'
     HttpClientModule,
     FormsModule,
     HttpModule,
-    NgbModule,
     //一定要放最后一个
     AppRoutingModule,
     // NgbModule.forRoot()
+    NgZorroAntdModule.forRoot()
   ],
   //全局服务
   providers: [GlobalPropertyService,ArticlesService,LocalStorage],
