@@ -9,6 +9,7 @@
   height: 80px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 li{
   float: left;
@@ -24,13 +25,7 @@ li a{
   border-top: solid 1px #9f9f9f;
   line-height: 40px;
 }
-.weixin{
-  width: 35px;
-  height: 31px;
-  margin: 10px 20px;
-}
-.weibo{
-  width: 35px;
-  height: 31px;
-  margin: 10px 20px;
+.icon{
+  font-size: 20px;
+  cursor: pointer;
 }

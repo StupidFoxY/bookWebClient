@@ -1,10 +1,29 @@
+.navbar-nav li{
+  box-sizing: border-box;
+  border-bottom: 2px solid #f8f8f8;
+}
+.navbar-nav li:hover{
+  color: #49a9ee !important;
+  border-bottom: 2px solid #108ee9;
+}
+.navbar-nav>li>a:hover{
+  color: #49a9ee !important;
+}
 .nav_main{
   position: fixed;
   width: 100%;
   display: block;
   z-index: 1;
+  font-size: 14px;
 }
-
+.fa-icon{
+  margin-right: 3px;
+}
+.search{
+  margin-left: -28px;
+  font-size: 14px;
+  color: #aaa;
+}
 nav{
   border-radius: 0;
   border-top: 0;

@@ -24,26 +24,19 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a routerLink="/index">首页</a></li>
-        <!--<li class="dropdown" myStyleOther>-->
-          <!--<a routerLink="/find" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现 <span class="caret"></span></a>-->
-          <!--<ul class="dropdown-menu">-->
-            <!--<li><a routerLink="/booklist">书籍</a></li>-->
-            <!--<li><a routerLink="/topic">话题</a></li>-->
-          <!--</ul>-->
-        <!--</li>-->
-            <li><a routerLink="/booklist">书籍</a></li>
-            <li><a routerLink="/topic">话题</a></li>
+        <li><a routerLink="/booklist">书籍</a></li>
+        <li><a routerLink="/topic">话题</a></li>
       </ul>
       <form class="navbar-form navbar-left">
         <div class="form-group search_main">
-          <input type="text" name="search" class="form-control" placeholder="发现新鲜事" [(ngModel)]="_search" maxlength="20" style="padding-right: 35px">
-          <img class="search_btn" src="../../assets/img/search.png" width="30px" style="margin-left: -20px" (click)="toSearch()">
+          <input type="text" name="search" class="form-control" placeholder="发现新鲜事" [(ngModel)]="_search" maxlength="20" style="padding-right: 35px;width: 220px">
+          <span class="fa fa-search fa-lg search" (click)="toSearch()"></span>
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown" myStyleOther *ngIf="isLogin">
           <a (click)="updatenum()" routerLink="personal-center/0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 10px">
-          <img class="person_center_img" src="http://10.40.4.10:3001/userhead/{{user?.user_head}}" >
+          <img class="person_center_img" src="http://localhost:3000/userhead/{{user?.user_head}}" >
             <div class="newnum"> {{artnum+bknum}}</div>
           </a>
           <ul class="dropdown-menu">
@@ -63,8 +56,7 @@
         </li>
         <li><a routerLink="login" *ngIf="!isLogin">登录</a></li>
         <li><a routerLink="regist" *ngIf="!isLogin">注册</a></li>
-        <li><a routerLink={{login_if}} (click)="ifLoginClick()"><span class="glyphicon glyphicon-pencil" >发表文章</span></a></li>
-        <!--<li><a routerLink="testpublish" (click)="ifLogin()"><span class="glyphicon glyphicon-pencil" >发表文章</span></a></li>-->
+        <li><a routerLink={{login_if}} (click)="ifLoginClick()"><span class="fa fa-pencil fa-icon"></span>发表文章</a></li>
       </ul>
     </div>
   </div>

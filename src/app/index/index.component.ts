@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
-
+  tabs=['书籍分类','文章推荐'];
+  tab_index=0;
 
 
   constructor() { }
