@@ -6,6 +6,6 @@
     <a (click)="toBookDetail(_book?.book_id)">{{_book?.book_name}}</a>
     <p class="author">作者：{{_book?.writer_name}}</p>
     <p class="author">类型：{{_book?.book_tag}}</p>
-    <p class="summary" [innerHtml]="_book?.book_content"></p>
+    <p class="summary" [innerHtml]="_book?.book_content | stringSlice:28"></p>
   </div>
 </div>

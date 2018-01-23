@@ -9,10 +9,10 @@
           <button class="buy" (click)="lovebook()"><i [class]="love_if?'fa fa-heart':'fa fa-heart-o'"></i> {{love_if?'取消喜欢':'喜欢此书'}}</button>
           <button class="buy" (click)="toShortpublish()">发表书评</button>
         </div>
-        <p>作者：{{_book?.writer_name}}</p>
-        <p>副标题：{{_book?.book_subhead}}</p>
-        <p>出版年：{{_book?.book_year}}</p>
-        <p>类型：{{_book?.book_tag}}</p>
+        <p class="detail-p">作者：{{_book?.writer_name}}</p>
+        <p class="detail-p">副标题：{{_book?.book_subhead}}</p>
+        <p class="detail-p">出版年：{{_book?.book_year}}</p>
+        <p class="detail-p">类型：{{_book?.book_tag}}</p>
         <span>作者简介：</span><p class="introduction author" [innerHtml]="_book?.writer_content"></p>
         <span>内容简介：</span><p class="introduction bookcontent" [innerHtml]="_book?.book_content"></p>
       </div>

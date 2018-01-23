@@ -1,8 +1,8 @@
-.navbar-nav li{
+.navbar-nav>li{
   box-sizing: border-box;
   border-bottom: 2px solid #f8f8f8;
 }
-.navbar-nav li:hover{
+.navbar-nav>li:hover{
   color: #49a9ee !important;
   border-bottom: 2px solid #108ee9;
 }

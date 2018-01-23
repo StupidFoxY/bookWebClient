@@ -18,7 +18,6 @@ import { IndexComponent } from './index/index.component';
 import { FindComponent } from './find/find.component';
 import { LoginComponent } from './login/login.component';
 import { RegistComponent } from './regist/regist.component';
-import { PersonalComponent } from './personal/personal.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { BookitemComponent } from './find/bookitem/bookitem.component';
 import { EverybookComponent } from './find/everybook/everybook.component';
@@ -98,7 +97,6 @@ import { ShortdetailComponent } from './shortdetail/shortdetail.component'
     FindComponent,
     LoginComponent,
     RegistComponent,
-    PersonalComponent,
     NotfoundComponent,
     BookitemComponent,
     EverybookComponent,

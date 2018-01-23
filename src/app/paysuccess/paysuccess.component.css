@@ -52,10 +52,10 @@
 }
 .content_body i{
   margin-right: 10px;
-  color: #ea6f5a;
+  color: #108ee9;
 }
 .content_body span{
-  color: #ea6f5a;
+  color: #108ee9;
 }
 .content_body p{
   margin-left: 37px;
@@ -70,7 +70,7 @@ button.buy{
   border: 0px;
   border-radius: 5px;
   outline: 0px;
-  background: #ea6f5a;
+  background: #108ee9;
   color: #fff;
   font-size: 16px;
 }

@@ -67,8 +67,8 @@ img{
 .meta a{
   margin-right: 5px;
   padding: 2px 6px;
-  color: #ea6f5a!important;
-  border: 1px solid #ea6f5a;
+  color: #108ee9!important;
+  border: 1px solid #108ee9;
   border-radius: 3px;
 }
 .meta a:hover{
@@ -137,7 +137,7 @@ img{
   padding: 8px 25px;
   font-size: 14px;
   color: white;
-  background-color: #ea6f5a;
+  background-color: #108ee9;
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
@@ -185,7 +185,7 @@ button.comment_btn{
   border: 0px;
   border-radius: 5px;
   outline: 0px;
-  background: #ea6f5a;
+  background: #108ee9;
   color: #fff;
   font-size: 16px;
 }
@@ -266,7 +266,7 @@ button.btn_zan{
   border: 0px;
   border-radius: 25px;
   outline: 0px;
-  background: #ea6f5a;
+  background: #108ee9;
   color: #fff;
   font-size: 16px;
 }

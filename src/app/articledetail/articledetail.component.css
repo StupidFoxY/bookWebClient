@@ -67,8 +67,8 @@ img{
 .meta a{
   margin-right: 5px;
   padding: 2px 6px;
-  color: #ea6f5a!important;
-  border: 1px solid #ea6f5a;
+  color: #108ee9!important;
+  border: 1px solid #108ee9;
   border-radius: 3px;
 }
 .meta a:hover{
@@ -137,7 +137,7 @@ img{
   padding: 8px 25px;
   font-size: 14px;
   color: white;
-  background-color: #ea6f5a;
+  background-color: #108ee9;
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
@@ -185,7 +185,7 @@ button.comment_btn{
   border: 0px;
   border-radius: 5px;
   outline: 0px;
-  background: #ea6f5a;
+  background: #108ee9;
   color: #fff;
   font-size: 16px;
 }
@@ -300,7 +300,7 @@ display: inline-block;
 .meta-bottom .collect .collect_btn {
   padding: 13px 0 15px;
   font-size: 0;
-  border: 1px solid #ea6f5a;
+  border: 1px solid #108ee9;
   border-radius: 40px;
 
   display: inline-block;
@@ -321,7 +321,7 @@ display: inline-block;
 }
 /*点击收藏后。。。。。。。。*/
 .meta-bottom .collect .collect_btn.active {
-  background-color: #ea6f5a
+  background-color: #108ee9
 }
 
 .meta-bottom .collect .collect_btn.active .aixin>a {
@@ -342,7 +342,7 @@ display: inline-block;
   display: inline-block;
 }
 .meta-bottom .collect .collect_btn .aixin a{
-  color: #ea6f5a;
+  color: #108ee9;
   padding: 18px 15px 18px 30px;
 }
 .meta-bottom .collect .collect_btn .aixin a i {
@@ -372,7 +372,7 @@ display: inline-block;
 .meta-bottom .collect .collect_btn .aixin_num a{
   /*border-left: 1px solid rgba(236,97,73,.4);*/
   font-size: 18px;
-  color: #ea6f5a;
+  color: #108ee9;
 }
 
 /*分享按钮=============================*/

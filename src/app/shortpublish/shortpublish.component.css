@@ -16,7 +16,7 @@
   border-radius: 20px;
   font-size: 15px;
   color: #fff;
-  background-color: #ea6f5a;
+  background-color: #108ee9;
   cursor: pointer;
   outline:0
 }
@@ -56,8 +56,8 @@
 .btn button{
   margin-top: 40px;
   font-size: 20px;
-  color: #ea6f5a;
-  border: solid 1px #ea6f5a;
+  color: #108ee9;
+  border: solid 1px #108ee9;
   border-radius: 25px;
   background-color: rgba(0,0,0,0);
   height: 50px;

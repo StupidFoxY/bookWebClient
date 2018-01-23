@@ -23,13 +23,13 @@
   color: #333;
 }
 .sort span a{
-  color: #ea6f5a;
+  color: #108ee9;
   font-weight: bolder;
   font-size: 18px;
 }
 a:hover{
   cursor: pointer;
-  color: #ea6f5a!important;
+  color: #108ee9 !important;
   text-decoration: none;
 }
 
@@ -40,7 +40,10 @@ a:hover{
   padding: 20px 30px;
   border: 1px solid #ddd;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+.bookitem:nth-child(3n+2){
+  margin: 0px 89px;
 }

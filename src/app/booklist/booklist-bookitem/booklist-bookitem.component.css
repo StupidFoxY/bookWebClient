@@ -3,14 +3,22 @@
   height: 160px;
   margin-bottom: 30px;
 }
+/* .booklist_bookitem:nth-child(3n+2){
+  margin: 0px 89px;
+} */
 .bookicon{
   width: 114px;
+  height: 161px;
   float: left;
   box-shadow: 0 1px 4px rgba(40,40,40,.6);
-}
-.bookicon:hover{
-  box-shadow: 0 0 6px rgba(40,40,40,.6);
+  overflow: hidden;
   cursor: pointer;
+}
+.bookicon>img{
+  transition: all .6s;
+}
+.bookicon>img:hover{
+  transform: scale(1.1);
 }
 .book_content{
   margin-left: 134px;
@@ -26,7 +34,7 @@
 }
 .book_content a:hover{
   text-decoration: none;
-  color: #ea6f5a!important;
+  color: #108ee9!important;
 }
 .book_content p.author{
   white-space: nowrap;
@@ -40,7 +48,7 @@
 .book_content p.summary{
   font-size: 13px;
   line-height: 18px;
-  height: 50px;
+  height: 55px;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 0px;
