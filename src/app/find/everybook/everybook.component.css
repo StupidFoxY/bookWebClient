@@ -2,24 +2,24 @@
   padding: 0 10px;
   background: #f9f9f9;
 }
-.bannerPicList{
+.bannerContainer .bookImg{
   margin-left:-10px;
   margin-right:-10px;
-}
-.bannerPicList li{
-  display: none;
-}
-.bannerPicList li.active{
-  display: block;
+  width: calc( 100% + 20px );
 }
 .bannerContainer .tag{
   color: #fff;
   display: inline-block;
-  background: #ea6f5a;
+  background: #108ee9;
 }
-.bannerContainer h3{
+.bannerContainer .erverbook-name{
+  display: inline-block;
   color: #333;
   margin-top:10px;
+  cursor: pointer;
+}
+.bannerContainer .erverbook-name:hover{
+  color: #108ee9;
 }
 .bannerContainer .introduce{
   height: 100px;
@@ -33,62 +33,23 @@
   margin-top: 10px;
   padding-top: 10px;
 }
-
-.bannerContainer .booklist{
+.bannerContainer .topicnav.book-tag{
+  border: 0px;
+  margin-top: 0px;
+}
+.bannerContainer .topiclist{
   list-style: inherit;
   padding-left: 20px;
   color: #cdcdcd;
   font-size: 16px;
 }
-.bannerContainer .booklist li{
+.bannerContainer .topiclist li{
   height: 30px;
 }
-.bannerContainer .booklist a{
+.bannerContainer .topiclist a{
   color: #666;
 }
-.bannerContainer .booklist a:hover{
+.bannerContainer .topiclist a:hover{
   color: #333;
-  text-decoration: none;
-}
-/*================书籍推荐*/
-
-.tuijian{
-  width:320px;
-  /*border: 1px red solid;*/
-  margin: 0 auto;
-  position: relative;
-  background: #f9f9f9;
-  height: 430px;
-}
-.middle-middle-bookshow{
-  background: #f9f9f9;
-  width: 128px;
-  margin-bottom: 5px;
-  float: left;
-  display: block;
-  position: relative;
-}
-.img-css{
-  width: 128px;
-  height: 125px;
-  margin: 8px 5px;
-  padding: 0 5px;
-
-}
-.booksname-css.author-css{
-width: 10px;
-height: 3px;
-text-decoration: none;
-
-}
-.booka{
-text-decoration: none;
-}
-.bookpubtimecss{
-margin: 0 1px;
-}
-#book_comment{
-  position: absolute;
-  top: 113px;
-  left: 98px;
+  /*text-decoration: none;*/
 }
