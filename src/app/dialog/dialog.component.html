@@ -1,0 +1,7 @@
+<div class="modal" *ngIf="visible">
+  <div class="modal-content">
+    <p class="close-icon"><span class="fa fa-times" (click)="onClose()"></span></p>
+    <h2 class="text-content"><span class="fa fa-exclamation-circle icon"></span>还未登录，无法操作！</h2>
+    <h4><a (click)="toLogin()">前往登录</a></h4>
+  </div>
+</div>

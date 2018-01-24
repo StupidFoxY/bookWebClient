@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { IndexComponent } from './index/index.component';
 import { FindComponent } from './find/find.component';
 import { LoginComponent } from './login/login.component';
@@ -10,19 +11,14 @@ import { BookdetailComponent } from './bookdetail/bookdetail.component';
 import { PaysuccessComponent } from './paysuccess/paysuccess.component';
 import { PayovertimeComponent } from './payovertime/payovertime.component';
 import { ShortpublishComponent } from './shortpublish/shortpublish.component'
-
-//时
 import { PayComponent } from './pay/pay.component';
 import { PaysecondComponent } from './paysecond/paysecond.component';
 import { SearchComponent } from './search/search.component';
 import { PersonaldetailComponent } from './personaldetail/personaldetail.component'
-
-//何
 import { TopicComponent } from './topic/topic.component';
 import { TopicdetailComponent } from './topicdetail/topicdetail.component';
 import { ArticledetailComponent } from './articledetail/articledetail.component';
 import { RefunddetailComponent } from './refunddetail/refunddetail.component'
-//chen
 import {PersonalCenterComponent} from "./personal-center/personal-center.component";
 import {TestpublishComponent} from "./testpublish/testpublish.component";
 import {PersonalInformationComponent} from "./personal-information/personal-information.component";

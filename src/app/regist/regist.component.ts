@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GlobalPropertyService } from './../services/global-property.service';
 import { UsersService } from './../services/users.service';
 import { Router } from '@angular/router';
-// import { LocalStorage } from '../services/localStorage.service';
+
 @Component({
   selector: 'app-regist',
   templateUrl: './regist.component.html',
@@ -29,7 +29,6 @@ export class RegistComponent implements OnInit {
     private glo:GlobalPropertyService,
     private router:Router,
     private userSer:UsersService,
-    // private localstorage:LocalStorage
   ) { }
 
   ngOnInit() {
@@ -138,7 +137,6 @@ export class RegistComponent implements OnInit {
                 that.router.navigate(['/**']);
               }else{
                 sessionStorage.setItem('user_id', result[0].user_id);
-                // that.localstorage.set('token',result.token);
                 that.router.navigate(['/index']);
               }
             });

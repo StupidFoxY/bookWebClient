@@ -32,7 +32,7 @@
           <input type="text"  placeholder="请填写真实姓名" name="receive_name" [(ngModel)]="receive_name" #receivename="ngModel">
           <div class="text-tip" *ngIf="(receivename.invalid || receivenameCheck()) && (receivename.dirty || receivename.touched)">
             <div class="text-danger">
-              <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+              <span class="fa fa-times-circle-o" aria-hidden="true"></span>
               {{receive_name_error}}
             </div>
           </div>
@@ -42,11 +42,11 @@
           <input type="text"  placeholder="收件人电话" name="receive_phone" [(ngModel)]="receive_phone" #tel="ngModel" pattern="^1[34578]\d{9}$" required>
           <div class="text-tip" *ngIf="tel.invalid && (tel.dirty || tel.touched)">
             <div class="text-danger" *ngIf="tel.errors.required">
-              <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+              <span class="fa fa-times-circle-o" aria-hidden="true"></span>
               手机号不能为空
             </div>
             <div class="text-danger" *ngIf="tel.errors.pattern">
-              <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+              <span class="fa fa-times-circle-o" aria-hidden="true"></span>
               手机号格式不正确
             </div>
           </div>
@@ -61,7 +61,7 @@
           <input type="text"  placeholder="收货地址" #address_detail="ngModel" name="receive_address" [(ngModel)]="receive_address" required>
           <div class="text-tip" *ngIf="address_detail.invalid && (address_detail.dirty || address_detail.touched)">
             <div class="text-danger" *ngIf="address_detail.errors.required">
-              <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+              <span class="fa fa-times-circle-o" aria-hidden="true"></span>
               地址不能为空
             </div>
           </div>

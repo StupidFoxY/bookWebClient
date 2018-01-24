@@ -3,6 +3,7 @@
     <ul class="pagination">
       <li class="{{curpage==1?'disabled':''}}" (click)="prevPage()"><a aria-label="Previous">&laquo;</a></li>
       <li class="{{curpage==page?'active':''}}" *ngFor="let page of pagelist" (click)="getCurPage(page)"><a>{{page}}</a></li>
+      <li class="{{curpage==page?'active':''}}" *ngIf="!pagelist.length" (click)="getCurPage(1)"><a>1</a></li>
       <li class="{{curpage==pages?'disabled':''}}" (click)="nextPage()"><a aria-label="Next">&raquo;</a></li>
     </ul>
   </nav>

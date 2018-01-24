@@ -22,7 +22,7 @@
       <div>
         <table>
           <td width="120"><h3>退款金额:</h3></td>
-          <td style="color: red ;font-size: 17px">￥{{(_refund?.book_price*_refund?.order_num).toFixed(2)}}</td>
+          <td style="color: #ea6f5a;font-size: 17px">￥{{(_refund?.book_price*_refund?.order_num).toFixed(2)}}</td>
         </table>
       </div>
       <div>
@@ -38,7 +38,7 @@
 </div>
 <div class="modal" *ngIf="modal_if"  [style.height]="full_height">
   <div class="modal_content" [style.top]="scrollTop">
-    <p style="text-align: right; margin: 0"><span class="glyphicon glyphicon-remove" (click)="close()"></span></p>
+    <p style="text-align: right; margin: 0"><span class="fa fa-times" (click)="close()"></span></p>
     <h4 style="margin: 40px 0px">退款将与1-2个工作日原路返回</h4>
       <ul>
         <li (click)="define()">确定</li>

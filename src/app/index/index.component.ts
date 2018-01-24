@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {ArticlesService} from '../services/articles.service';
+import { ArticlesService } from '../services/articles.service';
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css']
+  styleUrls: ['./index.component.css'],
+  providers: [ ArticlesService ]
 })
 export class IndexComponent implements OnInit {
   tabs=['书籍分类','文章推荐'];

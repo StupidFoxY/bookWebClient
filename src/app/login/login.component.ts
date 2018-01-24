@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GlobalPropertyService } from './../services/global-property.service';
 import { UsersService } from './../services/users.service';
 import { Router } from '@angular/router';
-import { LocalStorage } from '../services/localStorage.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
     private  glo:GlobalPropertyService,
     private userSer:UsersService,
     private router:Router,
-    private localstorage:LocalStorage
   ) { }
 
   ngOnInit() {
@@ -51,7 +50,6 @@ export class LoginComponent implements OnInit {
         }
       }else{
         sessionStorage.setItem('user_id', result[0].user_id);
-        that.localstorage.set('token',result.token);
         that.router.navigate(['/index']);
       }
     });

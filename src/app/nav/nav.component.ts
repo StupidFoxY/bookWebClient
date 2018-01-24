@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from './../services/users.service';
 import { Router } from '@angular/router';
-import {RecommentsService} from "../services/recomments.service";
+import { RecommentsService } from "../services/recomments.service";
 
 @Component({
   selector: 'app-nav',
@@ -13,10 +13,7 @@ export class NavComponent implements OnInit {
   user:any;
   _search:any;
   isLogin:boolean = false;
-  //模态框,未登录提示登录
   modal_if: boolean=false;
-  full_height:any;
-  scroll_top:any;
   login_if:any="";
   //==书的回复数
   bknum:any=0;
@@ -53,29 +50,21 @@ export class NavComponent implements OnInit {
       //====获取书评论数
       this.getbknum();
       //====文章回复数
-     this.getartnum();
+       this.getartnum();
       //this.allnum=(this.artnum)+(this.bknum);
       // this.getallnum();
       // this.allnum=this.getbknum+this.getartnum;
-
-
-
     }else{
       this.isLogin = false;
     }
-
     //初始换界面时获取topic_id
     this.ifLoginInit();
-
   }
-  //==============================================上面是init
 
-  //去登录界面
   toLogin(){
     this.router.navigate(['/login']);
   }
 
-  // 关闭模态框
   close(){
     this.modal_if = false;
   }
@@ -97,34 +86,19 @@ export class NavComponent implements OnInit {
     }
   }
 
-  //封装未登录的操作
-  unlogin(that){
-    console.log("用户未登录！！！！！！！！！！");
-    //让模态框显示在用户的该位置
-    that.scroll_top = window.scrollY*1.1+"px";
-    that.full_height=document.body.offsetHeight +"px";
-    //弹出模态框
-    that.modal_if =true;
-  }
-
   //发表文章需判断是否登录,并获取topic_id
   ifLoginClick(){
-    let that=this;
-    console.log("判断是否登录");
-    if(that.isLogin){
-      this.login_if="testpublish/0";
+    if(this.isLogin){
+      this.login_if = "testpublish/0";
     }else {
-      this.login_if="";
-      this.unlogin(that);
+      this.login_if = "";
+      this.modal_if = true;
     }
-
-
   }
 
   //初始换界面时获取topic_id
   ifLoginInit(){
-    let that=this;
-    if(that.isLogin){
+    if(this.isLogin){
       this.login_if="testpublish/0";
     }else {
       this.login_if="";

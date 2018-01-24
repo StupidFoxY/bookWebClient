@@ -2,10 +2,6 @@
 *, *:after, *:before {
   box-sizing: border-box;
 }
-span.glyphicon:before{
-  margin-right: 5px;
-  cursor: pointer;
-}
 ul,ol{
   list-style: none;
   padding: 0px;
