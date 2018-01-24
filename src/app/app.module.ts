@@ -43,9 +43,6 @@ import { TabComponent } from './index/tab/tab.component';
 import { ArticleComponent } from './index/article/article.component';
 import { PaginationComponent } from './index/pagination/pagination.component';
 import { PayComponent } from './pay/pay.component';
-import { BuyComponent } from './pay/buy/buy.component';
-import { BuystepComponent } from './pay/buy/buystep/buystep.component';
-import { SuccessComponent } from './pay/success/success.component';
 import { PaysecondComponent } from './paysecond/paysecond.component';
 import { ConfirmComponent } from './paysecond/confirm/confirm.component';
 import { ConfirmstepComponent } from './paysecond/confirm/confirmstep/confirmstep.component';
@@ -106,9 +103,6 @@ import { DialogComponent } from './dialog/dialog.component';
     ArticleComponent,
     PaginationComponent,
     PayComponent,
-    BuyComponent,
-    BuystepComponent,
-    SuccessComponent,
     PaysecondComponent,
     ConfirmComponent,
     ConfirmstepComponent,

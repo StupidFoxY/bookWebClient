@@ -29,7 +29,7 @@
       <form action="" #addressForm="ngForm">
         <div class="form-group">
           <span>收件人 </span>
-          <input type="text"  placeholder="请填写真实姓名" name="receive_name" [(ngModel)]="receive_name" #receivename="ngModel">
+          <input type="text" class="address-input"  placeholder="请填写真实姓名" name="receive_name" [(ngModel)]="receive_name" #receivename="ngModel">
           <div class="text-tip" *ngIf="(receivename.invalid || receivenameCheck()) && (receivename.dirty || receivename.touched)">
             <div class="text-danger">
               <span class="fa fa-times-circle-o" aria-hidden="true"></span>
@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
           <span>联系电话 </span>
-          <input type="text"  placeholder="收件人电话" name="receive_phone" [(ngModel)]="receive_phone" #tel="ngModel" pattern="^1[34578]\d{9}$" required>
+          <input type="text" class="address-input"  placeholder="收件人电话" name="receive_phone" [(ngModel)]="receive_phone" #tel="ngModel" pattern="^1[34578]\d{9}$" required>
           <div class="text-tip" *ngIf="tel.invalid && (tel.dirty || tel.touched)">
             <div class="text-danger" *ngIf="tel.errors.required">
               <span class="fa fa-times-circle-o" aria-hidden="true"></span>
@@ -53,12 +53,12 @@
         </div>
         <div class="form-group">
           <span>选择地址</span>
-          <select id="selProvince" (change)="showCitys()"></select>
-          <select id="selCity"></select>
+          <select class="address-select" id="selProvince" (change)="showCitys()"></select>
+          <select class="address-select" id="selCity"></select>
         </div>
         <div class="form-group">
           <span>详细地址</span>
-          <input type="text"  placeholder="收货地址" #address_detail="ngModel" name="receive_address" [(ngModel)]="receive_address" required>
+          <input type="text" class="address-input"  placeholder="收货地址" #address_detail="ngModel" name="receive_address" [(ngModel)]="receive_address" required>
           <div class="text-tip" *ngIf="address_detail.invalid && (address_detail.dirty || address_detail.touched)">
             <div class="text-danger" *ngIf="address_detail.errors.required">
               <span class="fa fa-times-circle-o" aria-hidden="true"></span>
