@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { FileUploadModule } from 'ng2-file-upload';
-import { NgZorroAntdModule } from 'ng-zorro-antd';
+// import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 //rout
 import { AppRoutingModule } from './app-routing.module';
@@ -158,7 +158,7 @@ import { DialogComponent } from './dialog/dialog.component';
     HttpModule,
     //一定要放最后一个
     AppRoutingModule,
-    NgZorroAntdModule.forRoot()
+    // NgZorroAntdModule.forRoot()
   ],
   //global service
   providers: [GlobalPropertyService],
