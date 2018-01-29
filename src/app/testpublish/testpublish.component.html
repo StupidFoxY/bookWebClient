@@ -17,7 +17,9 @@
            <!--<input type="file" ng2FileSelect [uploader]="uploader" (change)="selectedFileOnChanged($event)" multiple/>-->
            <input type="file" id="newUpload" (change)="getIamge($event.target.files)" accept="image/jpg,image/jpeg,image/png">
            <!--<img src="http://http://localhost:3000/upload/15040721517760.8206245208577392.png" alt="">-->
-           <div id="preview"></div>
+           <div id="preview" [ngClass]="{'upload-init':upload_icon}">
+             <span class="fa fa-plus" *ngIf="upload_icon"></span>
+           </div>
          </form>
          <div class="btn_pub"><button (click)="publishArticle()" class="btn">{{tishi}}</button></div>
        </div>
@@ -27,15 +29,3 @@
        <app-publish #publish (onPostData)="PostData($event)"></app-publish>
      </div>
    </div>
-
-
-
-
-
-
-
-
-
-
-
-

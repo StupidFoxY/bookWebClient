@@ -24,6 +24,7 @@ export class TestpublishComponent implements OnInit {
   tishi:any="发表文章";
   accept_topicid:any;
   formData: FormData;
+  upload_icon: boolean = true;
 
   @ViewChild(PublishComponent) editor: PublishComponent;
   constructor(
@@ -87,6 +88,7 @@ export class TestpublishComponent implements OnInit {
 
   //===============================预览图片
   getIamge(fileList: FileList) {
+    const self = this;
     if (fileList.length > 0) {
       let file: File = fileList[0];
       this.formData.append('uploadFile', file, file.name);
@@ -95,7 +97,8 @@ export class TestpublishComponent implements OnInit {
       var $img=$(img);
       $img.css("width","100%");
       $img.css("height","100%");
-      img.onload=function () {
+      img.onload = ()=>{
+        this.upload_icon = false;
         $("#preview").empty().append($img);
         //释放所占用的内容
         window.URL.revokeObjectURL(img.src);
@@ -143,4 +146,3 @@ export class TestpublishComponent implements OnInit {
     console.log(event)
   }
 }
-
