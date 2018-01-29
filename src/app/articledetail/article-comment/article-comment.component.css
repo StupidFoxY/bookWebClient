@@ -32,6 +32,9 @@ li .comment_content p:last-child{
 li .comment_content span:before{
   margin-right: 5px;
 }
+.like_span{
+  color: #b4b4b4;
+}
 /*===============回复*/
 /*按钮*/
 .art_answer{
@@ -97,9 +100,7 @@ li .comment_content span:before{
   border: none;
   border-radius: 20px;
   color: #fff!important;
-  background-color: #42c02e;
+  background-color: #108ee9;
   outline: none;
   display: block;
 }
-
-

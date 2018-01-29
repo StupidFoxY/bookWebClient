@@ -5,7 +5,8 @@
     <p><a (click)="togetuserid(_comment?.user_id)">{{_comment.user_name}}：</a>{{_comment.articlecom_content}}</p>
     <p>
       {{_comment.articlecom_time}}
-      <span class="fa fa-thumbs-up fa-lg" (click)="articlecomlike(_comment.articlecom_id)" [style.color]="like_if?'red':'#b4b4b4'">({{like_num}})</span>
+      <span class="fa fa-thumbs-up fa-lg" (click)="articlecomlike(_comment.articlecom_id)" [style.color]="like_if?'#ea6f5a':'#b4b4b4'">({{like_num}})</span>
+      <!-- <span class="like_span">({{like_num}})</span> -->
       <a class="art_answer" (click)="showAnswer()">回复</a>
     </p>
   </div>

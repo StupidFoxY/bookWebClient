@@ -2,3 +2,6 @@
   width: 100%;
   margin: 0 auto;
 }
+:host /deep/ .w-e-text-container{
+  height: 560px !important;
+}

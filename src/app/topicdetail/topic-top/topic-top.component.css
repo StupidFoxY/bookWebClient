@@ -28,21 +28,18 @@ img{
 .btn1{
   border-radius: 20px;
   background: white;
-  color: green;
+  color: #108ee9;
   width: 100px;
   height: 40px;
-  border: 1px solid green;
+  border: 1px solid #49a9ee;
   outline: 0px;
-
 }
 .btn2{
   border-radius: 20px;
   width: 110px;
   height: 40px;
-  background: #009f00;
+  background: #108ee9;
   color: white;
   outline: 0px;
   border: 0;
 }
-
-

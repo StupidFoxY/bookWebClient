@@ -37,6 +37,7 @@ export class ShortpublishComponent implements OnInit {
     this.book_id = this.aroute.snapshot.paramMap.get('book_id');
     this.glo.hiddenNavs = true;
     this.glo.hiddenBottom = true;
+    this.glo.hiddenhot = true;
     //获取书籍信息
     let that=this;
     let str = '{"book_id":'+ this.book_id +'}';

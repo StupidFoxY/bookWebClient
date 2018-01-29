@@ -44,9 +44,7 @@ import { ArticleComponent } from './index/article/article.component';
 import { PaginationComponent } from './index/pagination/pagination.component';
 import { PayComponent } from './pay/pay.component';
 import { PaysecondComponent } from './paysecond/paysecond.component';
-import { ConfirmComponent } from './paysecond/confirm/confirm.component';
-import { ConfirmstepComponent } from './paysecond/confirm/confirmstep/confirmstep.component';
- import { TopicComponent } from './topic/topic.component';
+import { TopicComponent } from './topic/topic.component';
 import { TopicListComponent } from './topic/topic-list/topic-list.component';
 import { SearchTopicComponent } from './topic/search-topic/search-topic.component';
 import { TopicdetailComponent } from './topicdetail/topicdetail.component';
@@ -104,8 +102,6 @@ import { DialogComponent } from './dialog/dialog.component';
     PaginationComponent,
     PayComponent,
     PaysecondComponent,
-    ConfirmComponent,
-    ConfirmstepComponent,
     SearchComponent,
     TopicComponent,
     TopicListComponent,

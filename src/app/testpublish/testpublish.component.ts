@@ -46,6 +46,7 @@ export class TestpublishComponent implements OnInit {
     this.accept_topicid = this.aroute.snapshot.paramMap.get('topic_id');
     this.glo.hiddenNavs = true;
     this.glo.hiddenBottom = true;
+    this.glo.hiddenhot = true;
     let that=this;
     that.userid=sessionStorage.getItem('user_id');
     //获取所有话题

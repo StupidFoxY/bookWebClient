@@ -25,7 +25,6 @@ li .comment_content a i{
 }
 
 li .comment_content .like_span{
-  margin-left: 5px;
   color: #b4b4b4;
 }
 li .comment_content p a:hover{
@@ -102,9 +101,7 @@ li .comment_content .like_span:before{
   border: none;
   border-radius: 20px;
   color: #fff!important;
-  background-color: #42c02e;
+  background-color: #108ee9;
   outline: none;
   display: block;
 }
-
-

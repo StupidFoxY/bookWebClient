@@ -22,7 +22,6 @@
 }
 
 
-/*以上by陈*/
 .content{
   width: 100%;
   height: 662px;
@@ -71,4 +70,7 @@ label{
   font-size: 18px;
   color: white;
   text-align: center;
+}
+.select_topic p{
+  margin: 10px
 }

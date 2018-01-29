@@ -7,8 +7,8 @@
   height: 30px;
   border: 0;
   border-radius: 4px;
-  color: #444;
-  background: #ffd100;
+  color: #fff;
+  background: #108ee9;
   cursor: pointer;
   float: right;
   outline: none;
@@ -22,8 +22,8 @@
   height: 30px;
   border: 0;
   border-radius: 4px;
-  color: #444;
-  background: #ffd100;
+  color: #fff;
+  background: #108ee9;
   cursor: pointer;
 }
 .detailed_information_tittle_left{
