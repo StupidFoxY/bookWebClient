@@ -5,3 +5,17 @@
 .banner img{
   min-width: 1080px;
 }
+.carousel-control{
+  display: flex;
+  align-items: center;
+}
+.carousel-control.left{
+  justify-content: flex-start;
+}
+.carousel-control.right{
+  justify-content: flex-end;
+}
+.carousel-control .banner-icon{
+  font-size: 40px;
+  margin:0px 30px;
+}
